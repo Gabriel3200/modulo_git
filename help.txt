@@ -1,0 +1,23 @@
+ls - Executa uma lista de elementos presentes em algum diretório.
+
+cd - Entrar em algum arquivo/diretório.
+
+mkdir - Cria uma pasta.
+
+echo "" > -  Cria um texto entre parênteses seguido do símbolo ">" cria um arquivo contendo este texto.
+
+cat - Executa algum arquivo.
+
+touch - Cria um arquivo.
+
+nano - Abre um editor de texto em algum arquivo.
+
+git init - Inicializa um repositório do git vazio na pasta atual.
+
+git status - Mostra os arquivos presentes no repositório.
+
+git config --global user.name "" - Configura o nome do usuário do GIT escrevendo o nome entre os parenteses
+
+git config --global user.email "" - Configura o email do usuário do GIT escrevendo o email entre os parenteses
+
+git commit - Onde se salva alterações feitas em arquivos
