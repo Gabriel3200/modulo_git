@@ -1,3 +1,5 @@
+GIT
+
 ls - Executa uma lista de elementos presentes em algum diretório.
 
 cd - Entrar em algum arquivo/diretório.
@@ -51,4 +53,14 @@ git commit -m "deprecated: histórico de cálculos ultrapassados"
 Security: em casos de vulnerabilidades corrigidas:
 git commit -m "Security: funções que coletam informações foram desativadas"
 
+CHANGELOG
+
+changelog.md -> md (MarkDown): É uma linguagem de marcação.
+
+Síntaxes:
+
+# : Título
+## : Subtítulo
+### : Tópico
+- : Pontos de listagens
 
