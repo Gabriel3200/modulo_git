@@ -16,8 +16,39 @@ git init - Inicializa um repositório do git vazio na pasta atual.
 
 git status - Mostra os arquivos presentes no repositório.
 
-git config --global user.name "" - Configura o nome do usuário do GIT escrevendo o nome entre os parenteses
+git config --global user.name "" - Configura o nome do usuário do GIT escrevendo o nome entre os parenteses.
 
-git config --global user.email "" - Configura o email do usuário do GIT escrevendo o email entre os parenteses
+git config --global user.email "" - Configura o email do usuário do GIT escrevendo o email entre os parenteses.
 
-git commit - Onde se salva alterações feitas em arquivos
+git commit - Onde se salva alterações feitas em arquivos em um editor de texto.
+
+git commit -am - colocando -m (m = mensage) você não entra no editor de texto e faz o commit direto no terminal escrevendo o comentário entre parenteses, 
+e colocando o -a (a = add) vocẽ adiciona ele diretamente ao stage
+
+PADRÕES PARA NOMEAÇÕES DE COMMITS:
+
+Chore: usado para pequenas tarefas: 
+git commit  –m “chore: removendo arquivo.txt” 
+
+Fix/Fixed: correções: 
+git commit  –m “fix: correção no cálculo de médias” 
+
+Feat: inclusão de funcionalidade: 
+git commit  –m “feat: inclusão de função para calcular mediana” 
+
+Docs: atualização de documentação: 
+git commit  –m “atualizando o changelog.md”
+
+Added/Add: novos recursos adicionados:
+git commit -m "Added: novos recursos de cálculos inteligentes"
+
+Removed: para recursos removidos nesta versão:
+git commit -m "removed: sistemas de cálculos ultrapassados"
+
+Deprecated: para recursos que serão removidos nas próximas atualizações
+git commit -m "deprecated: histórico de cálculos ultrapassados"
+
+Security: em casos de vulnerabilidades corrigidas:
+git commit -m "Security: funções que coletam informações foram desativadas"
+
+
