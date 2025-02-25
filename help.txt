@@ -39,6 +39,22 @@ git log --stat - mostra o hitórico de commits com mais detalhes
 
 obs: você pode juntar mais de uma variação do "git log": git log -n 3 --stat: mostra os três ultimos commits de forma detalhada 
 
+git restore - restaura a ultima alteração feita
+
+git revert - Outro commit será criado desfazendo as ultimas alterações 
+
+git checkout <FILE> - Desfaz alterações em arquivos (substituindo <FILE> pelo arquivo escolhido) que ainda não foram adicionados ao stage.
+
+git checkout <ID> - podemos avançar ou retroceder a determinados commits substituindo <ID> pelo ID do commit
+
+git checkout <BRANCH> - pode se mover entre BRANCHS substituindo <BRANCH> pelo nome da BRANCH desejada.
+
+git checkout -b <NOME_BRANCH> - cria uma nova branch com o nome que substitui <NOME_BRANCH> e o -b faz com que trocamos para essa nova branch
+
+git branch - mostra as branchs atualizações
+
+git branch <NOME_BRANCH> - cria uma nova branch com o nome que substitui <NOME_BRANCH>
+
 PADRÕES PARA NOMEAÇÕES DE COMMITS:
 
 Chore: usado para pequenas tarefas: 
