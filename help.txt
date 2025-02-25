@@ -1,5 +1,7 @@
 GIT
 
+COMANDOS:
+
 ls - Executa uma lista de elementos presentes em algum diretório.
 
 cd - Entrar em algum arquivo/diretório.
@@ -27,6 +29,16 @@ git commit - Onde se salva alterações feitas em arquivos em um editor de texto
 git commit -am - colocando -m (m = mensage) você não entra no editor de texto e faz o commit direto no terminal escrevendo o comentário entre parenteses, 
 e colocando o -a (a = add) vocẽ adiciona ele diretamente ao stage
 
+git log - mostra o hitórico de COMMITS
+
+git log -n 2 - mostra os ultimos commits de acordo com o numero depois de -n: git log -n 4: mostra os ultimos 4 commits.
+
+git log --oneline - resume cada commit em uma linha
+
+git log --stat - mostra o hitórico de commits com mais detalhes
+
+obs: você pode juntar mais de uma variação do "git log": git log -n 3 --stat: mostra os três ultimos commits de forma detalhada 
+
 PADRÕES PARA NOMEAÇÕES DE COMMITS:
 
 Chore: usado para pequenas tarefas: 
@@ -52,6 +64,11 @@ git commit -m "deprecated: histórico de cálculos ultrapassados"
 
 Security: em casos de vulnerabilidades corrigidas:
 git commit -m "Security: funções que coletam informações foram desativadas"
+
+ATALHOS
+
+ctrl+l = clear: limpa o terminal
+
 
 CHANGELOG
 
