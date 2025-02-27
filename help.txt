@@ -63,6 +63,8 @@ obs: você pode juntar mais de uma variação do "<Folder> log": <Folder> log -n
 
 <Folder> branch -D <NOME_BRANCH> - Deleta a branch escolhida
 
+<Folder> merge <NOME_BRANCH> - une o conteudo de duas branchs, entre em uma branch ex: "main", e escolha outra para unir as duas.
+
 PADRÕES PARA NOMEAÇÕES DE COMMITS:
 
 Chore: usado para pequenas tarefas: 
@@ -104,4 +106,8 @@ Síntaxes:
 ## : Subtítulo
 ### : Tópico
 - : Pontos de listagens
+
+VSCODE
+
+code . - Se você escrever esete código em um terminal ele abre o Vs Code
 
