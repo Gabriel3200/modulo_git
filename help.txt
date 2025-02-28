@@ -20,76 +20,76 @@ rm -r <FOLDER> - Deleta uma pasta
 
 rm -r <FILE> - Deleta um arquivo
 
-<Folder> init - Inicializa um repositório do <Folder> vazio na pasta atual.
+git init - Inicializa um repositório do git vazio na pasta atual.
 
-<Folder>t status - Mostra os arquivos presentes no repositório.
+git status - Mostra os arquivos presentes no repositório.
 
-<Folder> config --global user.name "" - Configura o nome do usuário do GIT escrevendo o nome entre os parenteses.
+git config --global user.name "" - Configura o nome do usuário do GIT escrevendo o nome entre os parenteses.
 
-<Folder> config --global user.email "" - Configura o email do usuário do GIT escrevendo o email entre os parenteses.
+git config --global user.email "" - Configura o email do usuário do GIT escrevendo o email entre os parenteses.
 
-<Folder> commit - Onde se salva alterações feitas em arquivos em um editor de texto.
+git commit - Onde se salva alterações feitas em arquivos em um editor de texto.
 
-<Folder> commit -am - colocando -m (m = mensage) você não entra no editor de texto e faz o commit direto no terminal escrevendo o comentário entre parenteses, 
+git commit -am - colocando -m (m = mensage) você não entra no editor de texto e faz o commit direto no terminal escrevendo o comentário entre parenteses, 
 e colocando o -a (a = add) vocẽ adiciona ele diretamente ao stage
 
-<Folder> log - mostra o hitórico de COMMITS
+git log - mostra o hitórico de COMMITS
 
-<Folder> log -n 2 - mostra os ultimos commits de acordo com o numero depois de -n: <Folder> log -n 4: mostra os ultimos 4 commits.
+git log -n 2 - mostra os ultimos commits de acordo com o numero depois de -n: git log -n 4: mostra os ultimos 4 commits.
 
-<Folder> log --oneline - resume cada commit em uma linha
+git log --oneline - resume cada commit em uma linha
 
-<Folder> log --stat - mostra o hitórico de commits com mais detalhes
+git log --stat - mostra o hitórico de commits com mais detalhes
 
-obs: você pode juntar mais de uma variação do "<Folder> log": <Folder> log -n 3 --stat: mostra os três ultimos commits de forma detalhada 
+obs: você pode juntar mais de uma variação do "git log": git log -n 3 --stat: mostra os três ultimos commits de forma detalhada 
 
-<Folder> restore <FILE> - restaura a ultima alteração feita
+git restore <FILE> - restaura a ultima alteração feita
 
-<Folder> revert <ID> - Outro commit será criado desfazendo as ultimas alterações 
+git revert <ID> - Outro commit será criado desfazendo as ultimas alterações 
 
-<Folder> checkout <FILE> - Desfaz alterações em arquivos (substituindo <FILE> pelo arquivo escolhido) que ainda não foram adicionados ao stage.
+git checkout <FILE> - Desfaz alterações em arquivos (substituindo <FILE> pelo arquivo escolhido) que ainda não foram adicionados ao stage.
 
-<Folder> checkout <ID> - podemos avançar ou retroceder a determinados commits substituindo <ID> pelo ID do commit
+git checkout <ID> - podemos avançar ou retroceder a determinados commits substituindo <ID> pelo ID do commit
 
-<Folder> checkout <BRANCH> - pode se mover entre BRANCHS substituindo <BRANCH> pelo nome da BRANCH desejada.
+git checkout <BRANCH> - pode se mover entre BRANCHS substituindo <BRANCH> pelo nome da BRANCH desejada.
 
-<Folder> checkout -b <NOME_BRANCH> - cria uma nova branch com o nome que substitui <NOME_BRANCH> e o -b faz com que trocamos para essa nova branch
+git checkout -b <NOME_BRANCH> - cria uma nova branch com o nome que substitui <NOME_BRANCH> e o -b faz com que trocamos para essa nova branch
 
-<Folder> branch - mostra as branchs atualizações
+git branch - mostra as branchs atualizações
 
-<Folder> branch <NOME_BRANCH> - cria uma nova branch com o nome que substitui <NOME_BRANCH>
+git branch <NOME_BRANCH> - cria uma nova branch com o nome que substitui <NOME_BRANCH>
 
-<Folder> branch <NOVA_BRANCH> <BRANCH_REFERENCIA> - cria uma nova branch com o conteudo da brach de referencia 
+git branch <NOVA_BRANCH> <BRANCH_REFERENCIA> - cria uma nova branch com o conteudo da brach de referencia 
 
-<Folder> branch -D <NOME_BRANCH> - Deleta a branch escolhida
+git branch -D <NOME_BRANCH> - Deleta a branch escolhida
 
-<Folder> merge <NOME_BRANCH> - une o conteudo de duas branchs, entre em uma branch ex: "main", e escolha outra para unir as duas.
+git merge <NOME_BRANCH> - une o conteudo de duas branchs, entre em uma branch ex: "main", e escolha outra para unir as duas.
 
 PADRÕES PARA NOMEAÇÕES DE COMMITS:
 
 Chore: usado para pequenas tarefas: 
-<Folder> commit  –m “chore: removendo arquivo.txt” 
+git commit  –m “chore: removendo arquivo.txt” 
 
 Fix/Fixed: correções: 
-<Folder> commit  –m “fix: correção no cálculo de médias” 
+git commit  –m “fix: correção no cálculo de médias” 
 
 Feat: inclusão de funcionalidade: 
-<Folder> commit  –m “feat: inclusão de função para calcular mediana” 
+git commit  –m “feat: inclusão de função para calcular mediana” 
 
 Docs: atualização de documentação: 
-<Folder> commit  –m “atualizando o changelog.md”
+git commit  –m “atualizando o changelog.md”
 
 Added/Add: novos recursos adicionados:
-<Folder> commit -m "Added: novos recursos de cálculos inteligentes"
+git commit -m "Added: novos recursos de cálculos inteligentes"
 
 Removed: para recursos removidos nesta versão:
-<Folder> commit -m "removed: sistemas de cálculos ultrapassados"
+git commit -m "removed: sistemas de cálculos ultrapassados"
 
 Deprecated: para recursos que serão removidos nas próximas atualizações
-<Folder> commit -m "deprecated: histórico de cálculos ultrapassados"
+git commit -m "deprecated: histórico de cálculos ultrapassados"
 
 Security: em casos de vulnerabilidades corrigidas:
-<Folder> commit -m "Security: funções que coletam informações foram desativadas"
+git commit -m "Security: funções que coletam informações foram desativadas"
 
 ATALHOS
 
@@ -110,4 +110,15 @@ Síntaxes:
 VSCODE
 
 code . - Se você escrever esete código em um terminal ele abre o Vs Code
+
+GITHUB
+
+git push - Envia novos commits e alterações ao repositório do GITHUB
+
+git pull - Recebe novos commits e alterações do GITHUB
+
+git push origin nome_da_branch - Para enviarmos o conteúdo de outra branch, que não é a principal, primeiro mudamos para ela, 
+usando o git checkout e depois executamos o git push com um parâmetro git push origin nome_da_branch
+
+
 
